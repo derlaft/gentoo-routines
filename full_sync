@@ -1,0 +1,6 @@
+#!/bin/sh
+
+layman -S &&
+emerge --sync &&
+eix-update ||
+echo Failure >&2
